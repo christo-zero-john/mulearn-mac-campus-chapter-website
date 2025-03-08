@@ -11,12 +11,12 @@ function ConnectCompeteLearn() {
           className=" mx-2 col-5 col-md-1 my-5 d-block mx-auto"
         />
         <div className="">
-          <p className="fs-2 text-light ts-normal-black fw-600 keyTitle">
+          <p className="fs-2 text-violet fw-600 keyTitle">
             Connect, Compete and Learn !
           </p>
           <p className="p">
             Connect with like minded people, compete with friends and learn from
-            one another
+            one another. Learn. Build and Grow!!
           </p>
         </div>
       </div>
