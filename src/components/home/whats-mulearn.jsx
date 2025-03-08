@@ -1,49 +1,47 @@
-import React from "react";
-import techFriends from "../../assets/img/tech-friends.webp";
+import { Link } from "react-router-dom";
+import JoinUs from "../joinus/joinus";
+import mulearnEcosystem from "../../assets/img/mulearn-the-link.png"
 
 function WhatsMulearn() {
   return (
     <section
-      className="row justify-content-center align-items-center py-3 px-md-3 m-0"
+      className="py-3 px-md-3 m-0"
       id="us"
     >
-      <div className="col-md-7">
-        <p className="display-5 fw-600 text-center">
-          What's <span className="en-mulearn">μLearn</span>
+      <div className="p-5 mb-4">
+        <div className="text-center pb-3">
+          <h1 className="display-5 fw-bold">Welcome to μlearn</h1>
+          <p className="lead">
+            Your ultimate hangout for learning and skill development!
+          </p>
+        </div>
+
+        <p className="p-2">
+          At μlearn, students take charge of their own education in a dynamic,
+          peer-driven community supported by expert mentors behind the scenes.
         </p>
-        <p className="text-md-center px-3 text-wrap">
-          <span>
-            <a
-              href="https://mulearn.org/"
-              className="en-mulearn text-decoration-none"
-            >
-              μlearn
-            </a>
-          </span>{" "}
-          is an awesome space where students hangout for the purpose of learning
-          and skill development. μlearn is a student driven community where
-          everything is carried out by the students themselves, with the support
-          of expert mentors behind the scenes. It is an amazing community
-          initiated by <a href="https://gtechindia.org/">GTech</a> (Group of
-          Technmology Companies), and is a synergy of the Industry, Institutions
-          and the Society. With its moto as to
-          <span className="mark d-inline-block">DEMOCRATICE</span>,
-          <span className="mark d-inline-block">DECENTRALISE</span>
-          and
-          <span className="mark d-inline-block">DIGITISE</span> learning and
-          peer learning as its core, μlearn enables students to learn cutting
-          edge technologies, carry on projects, connect with like minded peers,
-          seek guidence from experts from all over the industry and to land on
-          their dream jobs. As a mulearner, what you only need is the thrive to
-          improve and the courage to ask.
+        <img src={mulearnEcosystem} alt="" className="col-md-4 d-block col-8 mx-auto m-5"/>
+        <p className="py-md-5 text-center fs-3">         
+          <strong>Democratize, Decentralize</strong>, and{" "}
+          <strong>Digitize</strong> learning.
         </p>
-      </div>
-      <div className="col-md-6 d-block">
-        <img
-          src={techFriends}
-          alt=""
-          className="col-11 col-md-8 d-block m-auto img-fluid"
-        />
+        <ol className="mb-4">
+          <li className="p-3">
+            Master cutting-edge technologies and work on innovative projects
+          </li>
+          <li className="p-3">
+            Connect with like-minded peers who share your passion
+          </li>
+          <li className="p-3">
+            Gain valuable guidance from industry experts to help you land your
+            dream job
+          </li>
+        </ol>
+        <p>
+          All you need is the drive to improve and the courage to ask questions.
+          Join μlearn today and transform the way you learn!
+        </p>
+        <Link to={JoinUs} className="btn btn-darkorange text-light fw-500 px-5 mx-auto">Join μlearn Now</Link>
       </div>
     </section>
   );
