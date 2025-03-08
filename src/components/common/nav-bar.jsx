@@ -1,15 +1,12 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/nav-bar.css";
 // react Bootstrap navbar elements
-import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 
 function NavBar() {
   return (
-    <div className="bg-orange py-1 sticky-top">
+    <div className="bg-orange py-1 sticky-top en-Oxanium">
       <Navbar expand="lg" bg="light" varient="light" className="px-2">
         <Navbar.Brand as={Link} to="/" className="navbar-brand en-mulearn">
           μLEARN
@@ -21,12 +18,8 @@ function NavBar() {
               Home
             </Link>
 
-            <Link className="nav-link" to="/joinus">
-              Join Us
-            </Link>
-
-            <Link className="nav-link" to="/joinus/guide">
-              Getting Started
+            <Link className="nav-link" to="/campus-chapter/onboarding">
+              Students Onboarding
             </Link>
 
             <Link className="nav-link" to="/community/tasks">
