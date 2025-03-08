@@ -10,12 +10,11 @@ function LearnAndGrow() {
           Learn and Grow <span className="text-orange">Together</span> as a{" "}
           <span className="text-orange">Community</span>
         </p>
-        <p className="en-mulearn px-3">
+        <p className="en-mulearn px-3 col-8 mx-auto">
           Are you ready to learn, grow and upskill yourself to the next level?
           Come, be a part of the community, and let's start learning in a new
-          better way. Call in your friends as well, because things are going to
-          change once you experience it and it is more effective when done with
-          a group.
+          better way. Call in your friends too, because things are better done
+          as a group.
         </p>
 
         <Link
