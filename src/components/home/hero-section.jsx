@@ -1,36 +1,45 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import { Button } from "react-bootstrap";
 
 import "../../styles/hero-section.css";
-import mulearnLogoorange from "../../assets/img/mulearn-logo-orange.svg";
+import techFriendsImg from "../../assets/img/tech-friends.webp";
+import JoinUs from "../joinus/joinus";
+import Oppurtunities from "../../oppurtunities/oppurtunities";
 
 function Hero() {
   return (
-    <div
-      className="d-flex flex-column justify-content-evenly align-items-center"
-      id="hero"
-    >
-      <img
-        className="img-fluid w-50"
-        src={mulearnLogoorange}
-        alt="Mulearn Logo Orange"
-      />
-
-      <div id="hero-title">
-        <h1 className="display-6 en-sirin text-center title" id="">
-          <span className="mac text-nowrap">Mar Augusthinose College </span>{" "}
-          <span className="cc text-nowrap">Campus Chapter</span>{" "}
-        </h1>
-
-        <p className="en-mulearn fs-4 text-center hero-caption" id="">
-          Let's Learn and Grow Together!
-        </p>
+    <div className="">
+      <div className="">
+        <div className="p-5 m-5">
+          <div className="">
+            <p className="display-3 col-md-8 mx-auto fw-600 text-center">
+              Let's <span className="text-orange">break the Echo Chambers</span>{" "}
+              Together.
+            </p>
+            <p className="text-center col-11 mx-auto fs-5">
+              µLearn is a synergic philosophy of education, with a culture of
+              mutual learning through micro peer groups. We are here to assist
+              you in breaking through the echo chambers and free you from the
+              shackles you have grounded yourself in.
+            </p>
+          </div>
+          <div className="w-fit mx-auto">
+            <Link to={JoinUs} className="btn btn-danger fw-500 px-4 mx-2 fs-5">
+              Join µLearn
+            </Link>
+            <Link
+              to={Oppurtunities}
+              className="btn btn-outline-danger fw-500 px-4 mx-2 fs-5"
+            >
+              Explore Oppurtunities 🚀
+            </Link>
+          </div>
+        </div>
+        <img
+          className="col-8 d-block mx-auto"
+          src={techFriendsImg}
+          alt="illustration"
+        />
       </div>
-
-      <Link to="/joinus">
-        <Button className="btn-info">Wanna Join Us!</Button>
-      </Link>
     </div>
   );
 }
