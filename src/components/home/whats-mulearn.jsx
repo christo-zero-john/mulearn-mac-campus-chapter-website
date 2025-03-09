@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import JoinUs from "../joinus/joinus";
-import mulearnEcosystem from "../../assets/img/mulearn-the-link.png"
+import mulearnEcosystem from "../../assets/img/mulearn-the-link.webp"
 
 function WhatsMulearn() {
   return (
@@ -20,7 +20,7 @@ function WhatsMulearn() {
           At μlearn, students take charge of their own education in a dynamic,
           peer-driven community supported by expert mentors behind the scenes.
         </p>
-        <img src={mulearnEcosystem} alt="" className="col-md-4 d-block col-8 mx-auto m-5"/>
+        <img src={mulearnEcosystem} alt="" className="col-md-8 d-block col-8 mx-auto m-5"/>
         <p className="py-md-5 text-center fs-3">         
           <strong>Democratize, Decentralize</strong>, and{" "}
           <strong>Digitize</strong> learning.
